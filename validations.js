@@ -17,13 +17,11 @@ export const loginValidation = [
 ];
 
 export const todosCreateValidation = [
-  body("text", "Слишком мало текста").isString(),
+  body("text", "Должна быть строка").isString(),
 ];
 
 export const todosPatchValidation = [
-  body("text", "Слишком мало текста").isLength({
-    min: 5,
-  }),
+  body("text", "Должна быть строка").isString(),
 ];
 
 export const todosPatchCompleteValidation = [
