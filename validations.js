@@ -17,9 +17,7 @@ export const loginValidation = [
 ];
 
 export const todosCreateValidation = [
-  body("text", "Слишком мало текста").isLength({
-    min: 5,
-  }),
+  body("text", "Слишком мало текста").isString(),
 ];
 
 export const todosPatchValidation = [
