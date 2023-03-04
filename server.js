@@ -13,7 +13,7 @@ import {
 } from "./validations.js";
 import cors from "cors";
 
-const PORT = "https://todo-backend-kcg5.onrender.com";
+const PORT = 4444;
 
 const app = express();
 app.use(cors());
